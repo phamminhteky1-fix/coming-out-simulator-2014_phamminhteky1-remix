@@ -17,7 +17,8 @@ function Start(){
 
 	//////////////////////////////
 
-	N("<b>COMING OUT SIMULATOR 2014</b>");
+	N("<b>COMING OUT SIM 2014</b>");
+	N("(but remixed and ruined by phamminhteky1)")
 	N("A half-true game about half-truths.");
 	N("Hey there, player. Welcome to this game, I guess.");
 	N("What would you like to do now?");
@@ -62,11 +63,11 @@ function Play(message){
 		N("ABS NO FAKING IDEA");
 	// Asked either
 	}else if($.asked_about || $.asked_credits){
-		N("Yes, let's!");
+		N("Yes, let's gooo!");
 	}
 
 	N("Let's travel back " + (currentYear - 2010) + " years ago, to 2010...");
-	p("That was" + (currentYear - 2010) + "years ago?!");
+	p("That was " + (currentYear - 2010) + " years ago?!");
 	N("...to da evening that changed my life forever...");
 	N("AND AS YOU SEE, AFTER DAT EVENING I AM TRULY... uhhh sorry it is *almost* accidential spoiling...")
 
@@ -87,7 +88,7 @@ function Play(message){
 			$.main_menu_convo_1 = 2;
 
 			p(message);
-			N("Hey, I'm coding on this laptop. Turning my coming-of-age story into the game you're playing right now.");
+			N("Hey, me coding on DIS laptop. Turning my coming-of-age story into the game you're playing right now, are you seeing what I'm seeing?");
 			p("Naw, you're probably procrastinating.");
 			N("Look who's talking.");
 			p("Touché, douché.");
@@ -98,9 +99,11 @@ function Play(message){
 			$.main_menu_convo_1 = 3;
 
 			p(message);
-			N("Uh, compared to that, I guess my story isn't that tragic.");
+			N("Uh, compared to that :ending:, I guess my story isn't that tragic to be involved to BLOOD.");
+			N("And I'M not making THAT kind of violent games.")
 			N("Although that's kind of a glass one-hundredths-full interpretation.");
-			p("blooooood.");
+			p("BLOOD!");
+			N("STOP-SAYNG-BLOOD!")
 			N("Anyway...");
 			Play_2();
 		}
@@ -112,16 +115,17 @@ function Play_2(){
 
 	if(!$.asked_about){
 		N("If you didn't skip the About This Game section, you'd know this is a very personal story.");
-		p("Shush.");
+		p("Shush. I'm giving you some PRIVACY.");
 	}
 
 	N("This game includes dialogue that I, my parents, and my ex-boyfriend actually said.");
-	N("As well as all the things we could have, should have, and never would have said.");
+	N("But somehow muffled, idk why");
+	N("As well as all the things we could have, should have, must have, and never would have said.");
 	N("It doesn't matter which is which.");
-	N("Not anymore.");
+	N("Nah anymore.");
 
 	Choose({
-		"How can I win a game with no right answers?": function(message){
+		"How the hell can I win a game with no right answers?": function(message){
 			$.main_menu_convo_2 = 2;
 
 			p(message);
@@ -153,7 +157,7 @@ function Play_3(){
 
 	N("You'll be playing as me, circa 2010.");
 	if(!$.asked_credits){
-		N("Because you skipped the Credits, my (not-yet-legal) name is Nicky Case. Just so you know.");
+		N("Because you skipped the Credits, my (illegal) name is Nicky Case. Just so you know.");
 		p("Shush.");
 	}
 
@@ -190,12 +194,15 @@ function Play_3(){
 	
 	N("When you play...");
 	N("Choose your words wisely.");
-	N("Every character will remember everything you say. Or don't say.");
+	N("Every character will remember everything you say. Or don't say if you're afraid enough.");
+	N("Imagine playing Dispatch.");
 	p("Yeah. You even brought up my choices in this MAIN MENU.");
 	N("Exactly.");
+	N("And you also *almost* learnt yourslef how to play this game");
 
 	N(". . .");
 	N("Some things are hard not to remember.");
+	N("REMEMBER DAT!")
 	
 	Clear();
 	Start_Jack_1();
@@ -214,7 +221,7 @@ function Credits(message){
 	
 	N("Ah, how rude of me! Let me introduce myself.");
 	N("Hi, I'm Nicky Case.");
-	N("That's not my legal name, it's just my REAL name.");
+	N("That's my illegal name, it's just my REAL name.");
 
 	p("That's totes weird, dude.");
 	if($.asked_about){
@@ -240,7 +247,7 @@ function Credits(message){
 
 	if($.asked_about){
 		Choose({
-			"Speaking of which, let's play that! Now!": Play
+			"Speaking of which, let's play that! Now! NOW!!!!!": Play
 		});
 	}else{
 		Choose({
@@ -260,11 +267,11 @@ function About(message){
 	SipCoffee(message);
 
 	if($.asked_credits){
-		N("I wanted to tell my story.");
+		N("I just wanted to tell my story.");
 	}else{
 		N("This game...");
 		N("...more like a conversation simulator, really...");
-		N("...is a very personal story.");
+		N("...is a very very very very personal story.");
 	}
 	
 	p("Of course. You narcissist.");
@@ -275,16 +282,33 @@ function About(message){
 		N("I told you, it IS my real na--");
 		p("Aight, aight. Weirdo.");
 	}
-
+	N("This game,");
+	N("Uh, this is the remixer, and the one who ruined this...");
+	p("SHUT UP!");
+	p("Dude, right in the start, you have changed everything Nicky said and I say");
+	N("So?");
+	N("Well, tbh, this is my personal project just-4-fun");
+	N("He always makes bonker games!");
+	N("This game, a semi-biographical game by himself, is purposely used for the #Nar8 Game Jam")
+	N("A fun fact, he did not oppyright this game, that means you can remix yourslef, ruin the game even more, or even create your own game using this engine.");
+	N("You can even sell (???) and use it without mentioning the author, as he is also open to his sexuality.");
+	p("worst pun ever...");
+	N("What about letting you see my google search history and you ended up seeing searches like what is a fork...");
+	p("ENOUGH YAPPING");
+	N("Butt, mentioning the original creator will be highly appreciated by the creator himself and the Internet");
+	N("and also creates less (not legal) consequences...");
+	N("To know more about me, go to phamminhteky1-fix.github.io!");
+	N("Backing to Nicky..")
 	N("I made this game for the #Nar8 Game Jam. Gave me an excuse. And a deadline!");
 	p("You procrastinated until the last day to enter, didn't you.");
 	N("Yes.");
+	p("A fun fact...");
 	N("Also! This game is uncopyrighted. Dedicated to the public domain.");
+	p("...")
 	N("I'm as open with my source code as I am with my sexuality.");
-
-	p("Ugh, that's a terrible pun.");
-	N("Howzabout a 'Fork Me' programming pun?");
-	p("noooooo.");
+	p("...")
+	N("?")
+	p("uhm thanks")
 
 	if($.asked_credits){
 		Choose({
@@ -293,8 +317,8 @@ function About(message){
 	}else{
 		Choose({
 			"Bad puns aside, can we play now?": Play,
-			"So who ARE you? (Credits)": function(){
-				Credits("So who ARE you?");
+			"So what ARE you? (Credits)": function(){
+				Credits("So what ARE you?");
 			}
 		});
 	}
