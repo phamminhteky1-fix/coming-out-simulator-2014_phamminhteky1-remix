@@ -8,22 +8,25 @@ a half-true game about half-truths.
 Be careful what you say. In this conversation simulator, everyone will
 remember every dialogue option you pick, and your choices drive the story.
 This game is semi-autobiographical. You play as a fictionalized version
-of this game's author in the year 2010, during a night that changed their
+of this game's original author in the year 2010, during a night that changed his (or her?)
 life forever. If that seems confusing or awkward, well, that's the gist of
 being forced to come out to one's parents, isn't it?
 
 **Created by:** [Nicky Case](http://ncase.me/) | [@ncasenmare](https://twitter.com/ncasenmare)
 
+**Questinabily Remixed by:** [Moby Minad Bob (aka phamminhteky1)]()
+
 **GIFs & Screenshots:** [Imgur Album](http://imgur.com/a/ultWM)
 
-**Behind-the-scenes:** [My open design document.](http://blog.ncase.me/coming-out-simulator-2014/)
+**Behind-the-scenes (Nicky Case):** [Nick's open design document.](http://blog.ncase.me/coming-out-simulator-2014/)
 
 ---
 
-**This game is dedicated to the public domain. (CC0, Unlicense)**
+**This game is remixed, and the original projects is originaly delecated 2 the plubic domain**
 
-You are welcome to share and remix this game's code/art however you please,
+Nicky Case welcome everyone to share and remix this game's code/art however you please,
 even for money-making purposes. Attribution is always appreciated, but not mandatory.
+P/S: I will recommend you to remix the original project
 
 ---
 
