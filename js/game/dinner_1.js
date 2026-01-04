@@ -78,11 +78,11 @@ function Waiting_2(message){
 			}
 
 			Show("nicky","dinner_nicky_sit");
-			n("Oh, hey mom.");
+			n("Ohhhh, hey mom!");
 			
 			Waiting_End();
 		},
-		"Ugh, why did we get that thing?": function(message){
+		"Ugh, why did we get that thingy?": function(message){
 			n(message);
 
 			Show("mom","mom_stand");
@@ -92,7 +92,7 @@ function Waiting_2(message){
 			m("Your grandfather gave it to us.");
 
 			Show("nicky","dinner_nicky_sit");
-			n("Oh! Hey mom.");
+			n("Ohh! Hey mom.");
 			
 			Waiting_End();
 		},
@@ -106,13 +106,15 @@ function Waiting_2(message){
 
 			Show("mom","mom_stand");
 
-			m("Nick, what are you doing?...");
+			m("Nick, wtf are you doing?...");
 
 			Show("clock","clock_ticking");
 			PlaySound("clock","dinner_ticking",{loop:-1});
 			Show("nicky","dinner_nicky_sit");
 
-			n("MEOOOhhhh didn't see you. Ahem. Hey mom.");
+			n("MEOOOhhhh didn't see y-...");
+			n("uhhhh...");
+			n("hey mom??");
 
 			Waiting_End();
 		}
