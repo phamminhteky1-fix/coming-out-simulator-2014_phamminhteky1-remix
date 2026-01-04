@@ -1,3 +1,8 @@
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+console.log(currentYear);
+// Just in case it breaks
+
 function Start(){
 
 	$ = {};
@@ -18,12 +23,12 @@ function Start(){
 	N("What would you like to do now?");
 
 	Choose({
-		"Let's play this thing!": Play,
-		"Who are you? (Credits)": function(){
-			Credits("Who are you?");
+		"Let's play this thingy!": Play,
+		"Wtf are you? (Credits)": function(){
+			Credits("Wtf are you?");
 		},
-		"Hm, tell me more. (About This Game)": function(){
-			About("Hm, tell me more.");
+		"Hmmmm, tell me moree. (About Dis Game)": function(){
+			About("Hmmmm, tell me moree.");
 		}
 	});
 
@@ -46,22 +51,24 @@ function Play(message){
 	if(!$.asked_about && !$.asked_credits){
 		N("Jumping right into it! Great!");
 		N("No messing around with reading the Credits or the About This Game sections or--");
-		p("Shush.");
-		N("Fine, fine.");
+		p("SHUSH!");
+		N("Fine, fine, fine, fine....");
+		N("Nyaa-Nyaa-Nyaa-Nyaa...")
 	}
 	// Asked both
 	if($.asked_about && $.asked_credits){
-		p(". . .");
-		p("Why did you make that a clickable option, when it was the only option left.");
-		N("NO IDEA");
+		p(". . . . . .");
+		p("Why the hell did you make that a clickable option, when it was the only option left.");
+		N("ABS NO FAKING IDEA");
 	// Asked either
 	}else if($.asked_about || $.asked_credits){
 		N("Yes, let's!");
 	}
 
-	N("Let's travel back four years ago, to 2010...");
-	p("That was FOUR years ago?!");
-	N("...to the evening that changed my life forever.");
+	N("Let's travel back " + (currentYear - 2010) + " years ago, to 2010...");
+	p("That was" + (currentYear - 2010) + "years ago?!");
+	N("...to da evening that changed my life forever...");
+	N("AND AS YOU SEE, AFTER DAT EVENING I AM TRULY... uhhh sorry it is *almost* accidential spoiling...")
 
 	N("Tell me, dear player, how do you think this all ends?");
 
@@ -71,8 +78,9 @@ function Play(message){
 
 			p(message);
 			N("Yes. That is exactly how this game ends.");
+			N("AND YOU SEE, THAT MAKES ME NOW!!!")
 			p("Really?");
-			N("No.");
+			N("uhhh no.");
 			Play_2();
 		},
 		"Apparently, with you redditing at Starbucks.": function(message){
