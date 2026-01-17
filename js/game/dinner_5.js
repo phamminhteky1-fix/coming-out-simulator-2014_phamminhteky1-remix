@@ -10,8 +10,8 @@ function Start_Dinner_5(){
 
 	PlaySound("sfx","dinner_door");
 	
-	f("Hey Qiying! Hey Nick!");
-	f("I'm home!");
+	f("Hey Qiying! Hey Nickyyy!");
+	f("Meeeeeeeeeeeeeeeee home!");
 	
 	Show("dad","dad_serious");
 
@@ -20,12 +20,14 @@ function Start_Dinner_5(){
 
 	f("Stayed overtime. Hopefully the boss will notice it before my Performance Review.");
 	f("Really, though, I was just playing web games all day. Haha!");
+	f("(I LOVE WEB GAMES!!!)");
 	n("Ha ha.");
 
 	f("Nick, why aren't <i>your</i> web games any fun?");
+	f("That is the most boringgggg web game I ever played in my life");
 
 	Choose({
-		"I thought my games were fun...": function(message){
+		"I thought my games were fun... I tried my best to entertain my fans...": function(message){
 			n(message);
 			f("Well then! You have a sick sense of fun, don't you. Haha!");
 			n(". . .");
@@ -40,7 +42,7 @@ function Start_Dinner_5(){
 		},
 		"ART!": function(message){
 			n(message);
-			f("Pfft. What's the use of art?");
+			f("Pffffft. What's the use of art?");
 			f("Next thing you know, you're going to be writing bad amateur poetry, or something.");
 			n(". . .");
 			Casual();
@@ -107,7 +109,7 @@ function Casual_2(){
 	f("So, son! How's school?");
 
 	Choose({
-		"School's fine.": function(message){
+		"School's fineeeee.": function(message){
 
 			n(message);
 
@@ -130,21 +132,21 @@ function Casual_2(){
 			if($.grounded>0){
 
 				if($.grounded==1){
-					f("Don't you remember? I just grounded you for tomorrow.");
+					f("Don't you remember? I just grounded you for TOMORROW.");
 				}
 				if($.grounded==2){
-					f("Don't you remember? I just grounded you for a week.");
+					f("Don't you remember? I just grounded you for a WEEK.");
 				}
-				f("You must get your stupid from your mother's side. Haha!");
+				f("You must get your stooopid from your mother's side. Haha!");
 				
 				n("Um. I...");
 
 				$.grounded++;
 				if($.grounded==2){
-					f("I'm bumping it up. You're now grounded for a week.");
+					f("I'm bumping it up. You're now grounded for A WEEK.");
 				}
 				if($.grounded==3){
-					f("I'm bumping it up. You're now grounded for TWO weeks.");
+					f("I'm bumping it up. You're now grounded for TWO WEEKS.");
 				}
 
 			}
@@ -153,18 +155,21 @@ function Casual_2(){
 			Getting_A_Tutor();
 
 		},
-		"DAD I'M BISEXUAL AND BANGING JACK.": function(message){
+		"DAD I'M FAKINGLY BISEXUAL AND BANGING JACK.": function(message){
 			$.tried_talking_about_it = true;
 
 			Show("nicky","dinner_nicky_outrage");
-			n("DAD I'M BI--");
+			n("DAD I'M FAKINGLY BI--");
 			Show("nicky","dinner_nicky_sit");
 
 			m("BICYCLING to school every day starting next week.");
+			m("... AND IT WAS BONKERS!!!");
 			f("Oh good!");
 			f("You could certainly lose some weight, or else how will you get a girlfriend?");
+			f("Woman requiements for men are as high as men requiements for woman.");
 			f("You must get your chubbiness from your mother. Haha!");
 			n("Ha ha.");
+			m("(mummers) how dare...");
 			m("Speaking of school...");
 			Getting_A_Tutor();
 		}
@@ -185,7 +190,7 @@ function Getting_A_Tutor(){
 		case "yes":
 			n("Mom, we both promised we wouldn't talk about this...");
 			if($.tried_talking_about_it){
-				m("You <i>just</i> tried talking about it.");
+				m("You <i>just</i> tried talking about it. Now it's feathers in the wind.");
 			}
 			break;
 		case "no":
@@ -206,12 +211,12 @@ function Getting_A_Tutor(){
 
 	Choose({
 		"What?! No I don't!": function(message){
-			n(message);
+			n(message + " How would you think I do have?");
 			f("Don't be so shy about it.");
 			Getting_A_Tutor_2();
 		},
 		"Fine. You got me. I have a crush on Claire.": function(message){
-			n(message);
+			n(message + " She's so sexy and hot!");
 			Getting_A_Tutor_2();
 		},
 		"I have a boyfriend.": function(message){
@@ -228,6 +233,11 @@ function Getting_A_Tutor_2(){
 	
 	f("You're becoming a man, son!");
 	f("If I were your age, I ditch your mother and chase Claire, too! Haha!");
+	f("and... *YAP YAP YAP YAP YAP YAP*");
+	m("...")
+	f("YAP YAP YAP YAP YAP YAP");
+	n("...")
+	f("YAP YAP YAP YAP YAP YAP");
 
 	n("That's totes weird, dude.");
 	f("Talking back? Careful, I'll box your ears, boy!");
@@ -235,6 +245,7 @@ function Getting_A_Tutor_2(){
 	if($.changing_schools){
 		m("We were also thinking about changing schools for Nick.");
 		m("Maybe to Claire's school.");
+		m("Better let Nicky closer to Claire.");
 	}
 	if($.studying_subject!=$.studying_subject_2){
 		m("Claire will be tutoring Nick every day after school in "+$.studying_subject+" and "+$.studying_subject_2+".");
