@@ -24,9 +24,14 @@ being forced to come out to one's parents, isn't it?
 
 **This game is remixed, and the original projects is originaly delecated 2 the plubic domain**
 
-Nicky Case welcome everyone to share and remix this game's code/art however you please,
+Nicky Case welcomes everyone to share and remix this game's code/art however you please,
 even for money-making purposes. Attribution is always appreciated, but not mandatory.
+
 P/S: I will recommend you to remix the original project
+
+---
+**DISCALMER**
+The original game, along with this game contains (slightly) NSFW themes (sexual content). I have ruined it and it contained even more SWEARS. Kids MUSN'T be playing this right now! Parents should be scared enough to block this game alongside with its original version.
 
 ---
 
