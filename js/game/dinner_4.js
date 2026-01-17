@@ -236,9 +236,9 @@ function Throw_Up(){
 	Wait(1000);
 
 	Choose({
-		"what.": Father_Soon,
-		"whaaat.": Father_Soon,
-		"whaaaaaaaaaaaaaaat.": Father_Soon
+		"wat.": Father_Soon,
+		"waaat.": Father_Soon,
+		"waaaaaaaaaaaaaaaaaaaaaaaat.": Father_Soon
 	});
 
 }
@@ -311,6 +311,7 @@ function Father_Soon(message){
 			n("Promise me you won't.");
 			m("I pr--");
 			m("Shhh. Your father's here.");
+			m("yk what type of he is");
 			Father_Soon_2();
 		}
 	});
