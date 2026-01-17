@@ -40,11 +40,12 @@ function My_Fault(){
 
 	m("[sob]");
 	m("Oh Nick! My poor baby!");
+	m("He got infleunced by an godanm boy whoose parents are godanm crinimals and addicts!!!");
 
 	Show("nicky","dinner_nicky_sit");
 
 	Choose({
-		"Mom... please don't cry...": Cry_1,
+		"Mom... please don't cry... I BEG YOU!!!": Cry_1,
 		"Quit your fake crying.": Cry_2,
 		"[cry]": Cry_3
 	});
@@ -57,6 +58,7 @@ function Cry_1(message){
 	n(message);
 	m("huu... huu... huu...");
 	n("I'm sorry. About Jack, the lies, everything.");
+	n("From ever since I am born, to today, now, this minute, this second, this year.");
 	m("owww... owww...");
 	n("I take it all back.");
 	m("sniff...");
@@ -70,11 +72,13 @@ function Cry_2(message){
 	Show("nicky","dinner_nicky_defiant");
 
 	n(message);
+	m("hraangh... hraangh... hraangh!!!");
+	n("I read you like a book!");
 	m("huu... huu... huu...");
 	n("Seriously, it is SO fake.");
 	m("owww... owww...");
 	n("Will you shut up?!");
-	m("sniff...");
+	m("sniff... sniff... sniff...");
 	n("SHUT. UP.");
 	What_Are_You();
 
@@ -93,7 +97,7 @@ function Cry_3(message){
 	m("sniff...");
 
 	Show("nicky","dinner_nicky_defiant");
-	n("Okay, we done?");
+	n("Okay, we done crying for nine hours long?");
 	What_Are_You();
 
 }
@@ -153,23 +157,32 @@ function What_Are_You(){
 
 function Have_You_Had_Sex(){
 	m(". . .");
-	m("Did you have sex with Jack.");
+	m("Did you have sex with Jack?");
 	Choose({
 		"Yes.": function(message){
 			n(message);
 			m("[DRY HEAVE]");
+			m("I KNOW IT!");
+			m("I KNEW IT!");
 			Have_You_Had_Sex_2();
 		},
 		"No.": function(message){
 			n(message);
 			m("Please stop lying... I saw your texts...");
 			n("We were just sexting, we didn't actually--");
+			m("That's a kind of sex.");
 			m("...and your photos...");
+			m("That's the evidence.");
 			Have_You_Had_Sex_2();
 		},
 		"I'm not saying.": function(message){
 			n(message);
 			m("oh my god... you did.");
+			m("Please stop lying... I saw your texts...");
+			n("We were just sexting, we didn't actually--");
+			m("That's a kind of sex.");
+			m("...and your photos...");
+			m("That's the evidence.");
 			Have_You_Had_Sex_2();
 		}
 	});
