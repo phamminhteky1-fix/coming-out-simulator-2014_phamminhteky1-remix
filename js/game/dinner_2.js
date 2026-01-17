@@ -10,43 +10,43 @@ function Start_Dinner_2(){
 
 	switch($.waiting_action){
 		case "eat":
-			m("Oh, you started eating without me. You're very impatient.");
+			m("Oh, you started eating without me. You're the most impatient kid I ever see.");
 			n("...right.");
 			break;
 		case "wait":
-			m("You could have started without me. No need to let your food get cold.");
+			m("You could have started without me. No need to let your food get cold. Cold food causes E. Coli, diharrea and numerous other diseases.");
 			n("...sure.");
 			break;
 		case "play":
-			m("It's immature to play with your food, you know.");
+			m("It's very very very immature to play with your food, you know.");
 			n("Yeah, yeah.");
 			break;
 	}
 
-	m("Your father's running late. He'll be joining us for dinner in an hour's time.");
+	m("Your father's running so late that he'll be joining us for dinner in ten hour's time.");
 
 	Choose({
-		"Cool. Let's eat.": function(message){
+		"Kool. Let's eat.": function(message){
 			n(message);
-			n("*nom nom nom*");
+			n("*om nom nom nom nom nom nom*");
 			m(". . .");
 			m("What's your plans for tomorrow?");
 			Start_Dinner_2_1();
 		},
 		"I have something to tell both of you.": function(message){
 			n(message);
-			m("Alright. Tell us both later when he comes back.");
+			m("Alright. Tell us both later when Dad comes back.");
 			n("Oh. Okay.");
 			m(". . .");
-			n("*nom nom nom*");
+			n("*om nom nom nom nom nom nom*");
 			m("So, what's your plans for tomorrow?");
 			Start_Dinner_2_1();
 		},
 		"There's something I need to tell just you first.": function(message){
 			n(message);
-			m("Hold on Nick, I haven't asked about your day yet!");
-			n("Today was fine.");
-			m("Okay. And what's your plans for tomorrow?");
+			m("Hold on Nicky, I haven't asked about your day yet!");
+			n("Today was finee.");
+			m("Okay then. (That means you have a unfine day...) And what's your plans for tomorrow?");
 			Start_Dinner_2_1();
 		}
 	});
