@@ -11,7 +11,7 @@ function Start_Dinner_3(){
 
 	Choose({
 		"That's why I'm studying more with Jack.": Tutor,
-		"Look, I'm trying. I really am.": Tutor,
+		"Look, ma, I'm trying. I really am.": Tutor,
 		"My grades are fine.": Tutor
 	});
 
@@ -20,18 +20,19 @@ function Start_Dinner_3(){
 function Tutor(message){
 
 	n(message);
-	m("I'm worried for you. Jack's not a good influence.");
+	m("I'm worried for you. Jack's not a good influence, never has been a good infleunce for your growing brain.");
 
 	if($.hippies){
-		m("I think his parents might even be drug addicts...");
-		n("What makes you say th--");
+		m("I think his parents might even be drug addicts that is getting wanted by the FBI...");
+		n("What the heck makes you say th--");
 	}else if($.im_a_poet){
-		m("All he does is do poetry.");
+		m("All he does is do poetry. Just poetry. Only poetry. Nothing else.");
 		n("What makes you say th--");
 	}
 	
 	m("I'm getting you a home tutor.");
 	n("...what?");
+	n("Home tutor???");
 
 	if($.studying_subject!=$.studying_subject_2){
 		m("She'll be tutoring you in "+$.studying_subject+" and "+$.studying_subject_2+".");
@@ -40,6 +41,11 @@ function Tutor(message){
 	}
 
 	m("Her name is Claire. She's smart, pretty, and Caucasian. She's your age, too.");
+	m("You better get along with her. She is the BEST infleunce for you.");
+	m("And then you will...");
+	m("*YAP YAP YAP YAP YAP YAP*");
+	m("*YAP YAP YAP YAP YAP YAP*");
+	m("*YAP YAP YAP YAP YAP YAP*");
 
 	Choose({
 		"Are you trying to stop me from seeing Jack?": Tutor_Seeing,
@@ -98,17 +104,27 @@ function Tutor_Seeing(message){
 function Tutor_Matchmake(message){
 	n(message);
 	m("Well, if that's what you want, I could!");
+	m("We'll be very happy!");
 	n("nooooo.");
 	m("Don't be shy! You're growing up to be a man.");
 	m("And you're going to give me lots of grandkids.");
+	m("And boyyyyy, look! Other man is going to be jealous of you!!!!");
+	m("Isn't that good?")
+	m("*YAP YAP YAP YAP YAP YAP*");
+	m("*YAP YAP YAP YAP YAP YAP*");
+	m("*YAP YAP YAP YAP YAP YAP*");
 
 	Choose({
-		"Stop it! I haven't even met Claire yet!": function(message){
+		"Stop it! I haven't even met Claire yet! You said like, bruh, we have met since we are little!": function(message){
 			n(message);
 			m("Yet!");
 			m("She's coming over tomorrow!");
 			n("What? But I promised Jack--");
 			m("I ironed your best clothes. You'll make a good first impression.");
+			m("And she is gonna...");
+			m("*YAP YAP YAP YAP YAP YAP*");
+			m("*YAP YAP YAP YAP YAP YAP*");
+			m("*YAP YAP YAP YAP YAP YAP*");
 			Threat_Tutor();
 		},
 		"The odds of that are 50-50, coz I'm bi.": function(message){
@@ -122,16 +138,18 @@ function Tutor_Matchmake(message){
 
 			n("Yes. As in BISEXUAL.");
 			n("As in I AM SEXUALLY ATTRACTED TO BOTH MEN AND WOMEN.");
+			n("YEAH! MAN! IM FAKINGLY ATTRACTED TO MEN AND WOMEN");
 			m(". . .");
-			n(". . .");
+			n("yeah. . .");
 			Threat_School();
 		},
 		"No. I don't ever want to have kids.": function(message){
 			n(message);
 			m("You'll change your mind when you grow up.");
 			m("Raising a child is wonderful. Your children will look up to you!");
+			m("and... *YAP YAP YAP YAP YAP YAP*");
 			n("...of course, you narcissist.");
-			m("Excuse me?");
+			m("Excuse me? What the heck did you just said???");
 			n("Nothing.");
 			m(". . .");
 			Threat_Tutor();
@@ -142,7 +160,8 @@ function Tutor_Matchmake(message){
 function Tutor_Forget(message){
 	n(message);
 	m("No, because I've already scheduled Claire to come over tomorrow.");
-	n("What?!");
+	m("And paid one grand for her!");
+	n("What-the-heck?!");
 	n("No. I promised to study with Jack tomorrow.");
 	m(". . .");
 	m("How long did you want to stay over at his place?");
@@ -154,18 +173,22 @@ function Tutor_Forget(message){
 			n(". . .");
 			n("...Hello?");
 			n("It's not weird. Friends have sleepovers all the time.");
+			n("I used to have sleepovers frequently since I am little, is that wierd? You said like it <i>is</i> wierd.");
 			m(". . .");
+			m("(it isn't wierd if you are little, but thats immature btw.)");
 			Threat_School();
 		},
 		"Just the afternoon.": function(message){
 			n(message);
 			if($.lying_about_hanging_out){
-				m("I knew it. I caught your lie earlier.");
+				m("I KNEW IT. I caught your lie earlier.");
 				n("Huh?");
+				n("what?");
 			}else{
 				m("...I knew it.");
 			}
 			m("You're just hanging out with him.");
+			m("You're just dating him");
 			Threat_Tutor();
 		},
 		"Maybe an hour or so.": function(message){
@@ -287,6 +310,7 @@ function Plot_Twist(){
 		"What makes you think that?": function(message){
 			n(message);
 			m("Because I read your text messages.");
+			m("That's a must-do.");
 			Plot_Twist_2();
 		}
 	});
