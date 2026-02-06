@@ -116,31 +116,37 @@ function What_Happened_School(message){
 function What_Happened_Girl(message){
 	$.told_jack = "girl";
 
-	n(message);
-	j("Ewwwwww, seriously?");
-	n("Her name's Claire Something. She'll also be tutoring me.");
-	j("Ew squared, they're also hooking you up with your own tutor?");
-	n("Yup."); 
-	j("And allowing you to be her boy?");
-	n("Yup."); 
-	j("And encouraging you to be with her?");
-	n("Yup.");
-	j("and *YAP YAP YAP*?");
-	n("Yup."); 
-	j("and *YAP YAP YAP YAP YAP YAP*?");
-	n("Yup.");
-	var yap_counter = 3 ;
-	j("and " + "YAP"*yap_counter*3);
-	n("yup "*yap_counter);
-	yap_counter += 1 
-	j("and " + "YAP"*yap_counter*3);
-	n("yup "*yap_counter);
-	yap_counter += 1 
-	j("and " + "YAP"*yap_counter*3);
-	n("yup "*yap_counter);
-	j("ENOUGH YAPS AND YUPS. Let's focus on the main problem.");
-	j("What else?");
-	What_Happened_2();
+// Dialogue script with predefined n() and j() functions
+n(message);
+j("Ewwwwww, seriously?");
+n("Her name's Claire Something. She'll also be tutoring me.");
+j("Ew squared, they're also hooking you up with your own tutor?");
+n("Yup."); 
+j("And allowing you to be her boy?");
+n("Yup."); 
+j("And encouraging you to be with her?");
+n("Yup.");
+j("and *YAP YAP YAP*?");
+n("Yup."); 
+j("and *YAP YAP YAP YAP YAP YAP*?");
+n("Yup.");
+
+var yap_counter = 3;
+j("and " + "YAP ".repeat(yap_counter * 3));
+n("yup ".repeat(yap_counter));
+
+yap_counter += 1;
+j("and " + "YAP ".repeat(yap_counter * 3));
+n("yup ".repeat(yap_counter));
+
+yap_counter += 1;
+j("and " + "YAP ".repeat(yap_counter * 3));
+n("yup ".repeat(yap_counter));
+
+j("ENOUGH YAPS AND YUPS. Let's focus on the main problem.");
+j("What else?");
+What_Happened_2();
+	
 }
 function What_Happened_Texts(message){
 	$.told_jack = "texts";
