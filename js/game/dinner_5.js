@@ -29,6 +29,7 @@ function Start_Dinner_5(){
 	Choose({
 		"I thought my games were fun... I tried my best to entertain my fans...": function(message){
 			n(message);
+			n("You saw my games are trending all-time on Newgrounds...");
 			f("Well then! You have a sick sense of fun, don't you. Haha!");
 			n(". . .");
 			Casual();
@@ -42,7 +43,7 @@ function Start_Dinner_5(){
 		},
 		"ART!": function(message){
 			n(message);
-			f("Pffffft. What's the use of art?");
+			f("Prrffffft. What's the use of art?");
 			f("Next thing you know, you're going to be writing bad amateur poetry, or something.");
 			n(". . .");
 			Casual();
@@ -95,6 +96,7 @@ function Casual(){
 			n(". . .");
 			m(". . .");
 			f("Well, you've cooked up worse, hun. Haha!");
+			m("*wtf he ate my vomit*");
 
 			Casual_2();
 
@@ -200,29 +202,35 @@ function Getting_A_Tutor(){
 		case "tit for tat":
 			n("Mom, you said you wouldn't talk about this if I didn't...");
 			if($.tried_talking_about_it){
-				m("You <i>just</i> tried talking about it.");
+				m("You <i>just</i> tried talking about it. Course it was feathers in the wind.");
 			}
 			break;
 	}
 
 	f("Talking about what?...");
-	f("I'm the head of this household. You two better not be hiding secrets from me.");
+	f("I'm the HEAD of this household. You two better not be hiding secrets from me.");
+	f("And you know, there will be TEREBLE CONSEQUENCES if you hide");
+	f("Yes, CONSEQUENCES");
 	m("Oh... Nick just really, really likes Claire.");
 
 	Choose({
-		"What?! No I don't!": function(message){
+		"What the heck?! No I don't!": function(message){
 			n(message + " How would you think I do have?");
 			f("Don't be so shy about it.");
+			f("I used to be like you, ha ha");
 			Getting_A_Tutor_2();
 		},
 		"Fine. You got me. I have a crush on Claire.": function(message){
-			n(message + " She's so sexy and hot!");
+			n(message + " She's so fuckingly sexy and hot!");
 			Getting_A_Tutor_2();
 		},
 		"I have a boyfriend.": function(message){
 			n(message);
 			f("Yes son! You're going to be a boyfriend!");
+			f("Clare's boyfriend");
+			f("How sweet you are, son!");
 			n("<i>Have</i>. I <i>have</i> a--");
+			n("uhh nvm I take back");
 			Getting_A_Tutor_2();
 		}
 	});
