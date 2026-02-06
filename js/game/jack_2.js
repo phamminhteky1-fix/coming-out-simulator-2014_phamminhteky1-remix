@@ -116,7 +116,6 @@ function What_Happened_School(message){
 function What_Happened_Girl(message){
 	$.told_jack = "girl";
 
-// Dialogue script with predefined n() and j() functions
 n(message);
 j("Ewwwwww, seriously?");
 n("Her name's Claire Something. She'll also be tutoring me.");
@@ -132,6 +131,7 @@ j("and *YAP YAP YAP YAP YAP YAP*?");
 n("Yup.");
 
 var yap_counter = 3;
+// FIXED: Using .repeat() instead of multiplication
 j("and " + "YAP ".repeat(yap_counter * 3));
 n("yup ".repeat(yap_counter));
 
