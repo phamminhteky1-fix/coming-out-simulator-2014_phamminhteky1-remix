@@ -94,9 +94,12 @@ function What_Happened_Abuse(message){
 	$.told_jack = "abuse";
 
 	n(message);
-	j("OH MY GWAD!");
+	j("OH-MY-GWAD!");
 	j("Nicky, you need to call Child Protective Services.");
+	j("Or your neighbour should have known it and called police and jail them.");
 	n("What?! No. That's way too much.");
+	n("And Asian parents often get into fights or hit their kid sometimes");
+	n("They used tiger parenting against me, yk.");
 	j("Just... okay, but at least promise me you'll visit the school counselor tomorrow?");
 	n("Fine.");
 	j(". . .");
@@ -131,7 +134,6 @@ j("and *YAP YAP YAP YAP YAP YAP*?");
 n("Yup.");
 
 var yap_counter = 3;
-// FIXED: Using .repeat() instead of multiplication
 j("and " + "YAP ".repeat(yap_counter * 3));
 n("yup ".repeat(yap_counter));
 
@@ -154,7 +156,8 @@ function What_Happened_Texts(message){
 	n(message);
 	j("That is just plain rude!");
 	j("Wait, what will you do with these texts right now, then?");
-	n("I can hide them better. My parents aren't exactly a tech-savvy bunch.");
+	n("I can hide them better. My parents aren't exactly a tech-savvy bunch...");
+	n("...and thats as ez as eating a cookie.");
 	j("...just plain rude.");
 	What_Happened_2();
 }
@@ -164,14 +167,14 @@ function What_Happened_2(){
 	n("And that's just one out of three crappy things that happened.");
 	j("Nicky...");
 	j("I am truly, truly apologetic.");
-	j("This is my fault. I urged you to come out to your parents. Stupid me.");
+	j("This is my fault. I urged you to come out to your parents. Stooopid me.");
 
 	Choose({
-		"Yeah, stupid you.": function(message){
+		"Yeah, stoooopid you.": function(message){
 			$.blame = "jack";
 
 			n(message);
-			n("If you hadn't been all so 'ohhhh Nicky coming out is good for the soul' and shit, this never would have...");
+			n("If you hadn't been all so 'ohhhh Nickalous coming out is good for the soul' and shit, this never would have...");
 			j(". . .");
 			n("I'm sorry. You're the only person I can lash out on.");
 			n("Isn't that just fucked up?");
@@ -220,12 +223,14 @@ function What_Now(){
 	Choose({
 		"I'm going to sabotage my parents' plans.": function(message){
 			n(message);
+			n("We always got our way out!");
 
 			if($.told_jack=="texts"){
 				n("I'll set up a new email and virtual phone number to talk with you.");
 				n("This way they can't spy on our communications anymore.");
 			}else if($.told_jack=="girl"){
 				n("I'll tell Claire everything. With any luck, she'll help me fight back.");
+				n("Through my parent's description, she isn't that 'evil', anyway.");
 			}else{
 				n("I'll figure out a way, somehow...");
 			}
@@ -251,6 +256,7 @@ function What_Now(){
 			n("Not running away, I mean. Although if I did I could crash at your place.");
 			n("But anyway. I'm going to try to get an internship or scholarship in the US.");
 			n("And get far, far away from these people.");
+			n("Somewhere I can be bi forever in my life without getting bugged by these human beans!");
 			What_Now_2();
 		}
 	});
@@ -307,6 +313,8 @@ function What_Now_3(){
 	j(". . .");
 	j("I love you, Nicky.");
 	n("I love you too, Jack.");
+	j("Night night, bud");
+	n("...");
 	
 	var insult = "";
 	if($.hippies) insult+=" new-age hippie";
