@@ -174,7 +174,7 @@ function What_Happened_2(){
 			$.blame = "jack";
 
 			n(message);
-			n("If you hadn't been all so 'ohhhh Nickalous coming out is good for the soul' and shit, this never would have...");
+			n("If you hadn't been all so 'ohhhh Nicklaus coming out is good for the soul' and shit, this never would have...");
 			j(". . .");
 			n("I'm sorry. You're the only person I can lash out on.");
 			n("Isn't that just fucked up?");
